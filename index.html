@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Desencriptador</title>
+
+		<link rel="stylesheet" href="CSS/reset.css" />
+		<link rel="stylesheet" href="CSS/styles.css" />
+
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400&family=Montserrat:wght@300&display=swap"
+			rel="stylesheet"
+		/>
+	</head>
+
+
+	<body>
+		<header><img src="Imagenes/logo.svg" alt="Loog de Alura Latam"></header>
+
+		<main>
+			<!-- * AREA DE TEXTO - MENSAJE A DESENCRIPTAR / ENCRIPTAR * -->
+			<form>
+				<fieldset class="mensaje-contenedor">
+					<label for="mensaje"></label>
+					<textarea
+						name="mensaje"
+						id="mensaje"
+						cols="30"
+						rows="10"
+						placeholder="Ingrese el texto aquí"
+					></textarea>
+				</fieldset>
+
+				<fieldset>
+					<span>Solo letras minúsculas y sin acentos</span>
+					<button class ="boton-encriptar" type="button">Encriptar</button>
+					<button type="button">Desencriptar</button>
+				</fieldset>
+			</form>
+
+			<!-- * PANEL DEL COSTADO DERECHO * -->
+			<aside class="panel--container">
+				<!-- 
+                    Cosas que aparecen antes de desencriptar / encriptar
+                 -->
+				<div class="panel__default">
+					<img class="hidden" src="Imagenes/Muñeco.svg" alt="Persona tratando de buscar algo con una lupa" />
+					<p class="panel__default--aviso">Ningún mensaje fue encontrado</p>
+					<p class="panel__default--consejo">Ingrese el texto que desees encriptar o desencriptar</p>
+				</div>
+
+				<!-- 
+                    Mensaje ya desencriptado / encriptado
+                 -->
+				<div class="hidden">
+					<p></p>
+                    <button>Copiar</button>
+				</div>
+
+				
+			</aside>
+		</main>
+
+		<!-- * FOOTER * -->
+		<footer>
+			<p>Made by: Luciano Oyarzabal</p>
+			<p>Github: @keycress</p>
+		</footer>
+
+		<script src="JS/script.js"></script>
+	</body>
+</html>
