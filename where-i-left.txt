@@ -1,0 +1,3 @@
+Cambiar todas las etiquetas a unas mas legibles por dios.
+
+Separar el CSS

@@ -17,14 +17,13 @@
 		/>
 	</head>
 
-
 	<body>
-		<header><img src="Imagenes/logo.svg" alt="Loog de Alura Latam"></header>
+		<header><img src="Imagenes/logo.svg" alt="Loog de Alura Latam" /></header>
 
 		<main>
 			<!-- * AREA DE TEXTO - MENSAJE A DESENCRIPTAR / ENCRIPTAR * -->
 			<form>
-				<fieldset class="mensaje-contenedor">
+				<fieldset class="texto-a-modificar-container">
 					<label for="mensaje"></label>
 					<textarea
 						name="mensaje"
@@ -35,41 +34,46 @@
 					></textarea>
 				</fieldset>
 
-				<fieldset>
-					<span>Solo letras minúsculas y sin acentos</span>
-					<button class ="boton-encriptar" type="button">Encriptar</button>
-					<button type="button">Desencriptar</button>
+				<fieldset class="botones-principales">
+					<span class="consejo">Solo letras minúsculas y sin acentos</span>
+					<button class="boton-encriptar" type="button">
+						<p>Encriptar</p>
+					</button>
+					<button class="boton-desencriptar" type="button">
+						<p>Desencriptar</p>
+					</button>
 				</fieldset>
 			</form>
 
-			<!-- * PANEL DEL COSTADO DERECHO * -->
-			<aside class="panel--container">
+			<!-- * PANEL DEL COSTADO DERECHO - Mensaje ya des/encriptado * -->
+			<aside class="texto-modificado-container">
 				<!-- 
                     Cosas que aparecen antes de desencriptar / encriptar
                  -->
-				<div class="panel__default">
-					<img class="hidden" src="Imagenes/Muñeco.svg" alt="Persona tratando de buscar algo con una lupa" />
-					<p class="panel__default--aviso">Ningún mensaje fue encontrado</p>
-					<p class="panel__default--consejo">Ingrese el texto que desees encriptar o desencriptar</p>
+				<div class="texto-no-ingresado">
+					<img
+						class="hidden"
+						src="Imagenes/Muñeco.svg"
+						alt="Persona tratando de buscar algo con una lupa"
+					/>
+					<p class="texto-no-ingresado-aviso">Ningún mensaje fue encontrado</p>
+					<p class="texto-no-ingresado-consejo">
+						Ingrese el texto que desees encriptar o desencriptar
+					</p>
 				</div>
 
 				<!-- 
                     Mensaje ya desencriptado / encriptado
                  -->
-				<div class="hidden">
-					<p></p>
-                    <button>Copiar</button>
-				</div>
+				<div class="hidden texto-final-container">
+					<p class="texto-final"></p>
 
-				
+					<button class="boton-copiar"><p>Copiar</p></button>
+				</div>
 			</aside>
 		</main>
 
 		<!-- * FOOTER * -->
-		<footer>
-			<p>Made by: Luciano Oyarzabal</p>
-			<p>Github: @keycress</p>
-		</footer>
 
 		<script src="JS/script.js"></script>
 	</body>
