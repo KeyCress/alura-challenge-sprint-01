@@ -4,13 +4,12 @@
 
 let mensajeDelUsuario = document.querySelector("#mensaje");
 let textoFinal = document.querySelector(".texto-final");
-let textoFinalContainer = document.querySelector(
-	".texto-final-container"
-);
+let textoFinalContainer = document.querySelector(".texto-final-container");
 
 let textoNoIngresado = document.querySelector(".texto-no-ingresado");
 
 let botonEncriptar = document.querySelector(".boton-encriptar");
+let botonDesencriptar = document.querySelector(".boton-desencriptar");
 
 botonEncriptar.addEventListener("click", function () {
 	/* 
@@ -22,7 +21,6 @@ botonEncriptar.addEventListener("click", function () {
 	if (mensaje == "") {
 		textoFinalContainer.classList.add("hidden");
 		textoFinal.textContent = "";
-
 		textoNoIngresado.classList.remove("hidden");
 	} else {
 		//* Cambiando cada letra por su encriptacion.
@@ -54,4 +52,49 @@ botonEncriptar.addEventListener("click", function () {
 		textoFinalContainer.classList.remove("hidden");
 		textoFinal.textContent = mensaje.join("");
 	}
+});
+
+botonDesencriptar.addEventListener("click", function () {
+    let mensaje = mensajeDelUsuario.value;
+    console.log(mensaje);
+
+    /* 
+    TODO
+        Usar Reg o como se llame, tal vez aplicarlo en el codigo de arriba?, aprender bien como se usa.
+    
+    */
+
+
+	if (mensaje == "") {
+		textoFinalContainer.classList.add("hidden");
+		textoFinal.textContent = "";
+		textoNoIngresado.classList.remove("hidden");
+	} else {
+        mensaje.forEach(function (letra, index) {
+			if (letra == "enter") {
+				mensaje[index] = "e";
+			}
+
+			if (letra == "imes") {
+				mensaje[index] = "i";
+			}
+
+			if (letra == "ai") {
+				mensaje[index] = "a";
+			}
+
+			if (letra == "ober") {
+				mensaje[index] = "o";
+			}
+
+			if (letra == "ufat") {
+				mensaje[index] = "u";
+			}
+		});
+
+        textoNoIngresado.classList.add("hidden");
+
+		textoFinalContainer.classList.remove("hidden");
+		textoFinal.textContent = mensaje.join("");
+    }
 });
