@@ -1,1 +1,5 @@
-Creo uqe ya funciona? solo tengo uqe hacer los demas reemplazos
+-Agregar funcionalidad al boton "Copiar"
+
+-Crear footer
+
+-Arreglar errores al poner un texto muy grande (lorem30), en el text area y el output

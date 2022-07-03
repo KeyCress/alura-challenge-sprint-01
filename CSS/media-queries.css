@@ -67,6 +67,8 @@
 
 	.textarea-botones {
 		grid-area: textarea-botones;
+
+		text-align: center;
 	}
 
 	.texto-a-modificar-container textarea {
