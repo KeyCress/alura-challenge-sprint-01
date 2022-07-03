@@ -9,6 +9,7 @@
 		<link rel="stylesheet" href="CSS/reset.css" />
 		<link rel="stylesheet" href="CSS/styles.css" />
 		<link rel="stylesheet" href="CSS/buttons.css">
+		<link rel="stylesheet" href="CSS/media-queries.css">
 
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -23,6 +24,12 @@
 
 		<main>
 			<!-- * AREA DE TEXTO - MENSAJE A DESENCRIPTAR / ENCRIPTAR * -->
+
+			<!-- 
+					//* ---------------------------------------------------------- *//
+					//* --- AREA DE TEXTO - MENSAJE A DESENCRIPTAR / ENCRIPTAR --- *//
+					//* ---------------------------------------------------------- *//
+				 -->
 			<form>
 				<fieldset class="texto-a-modificar-container">
 					<label for="mensaje"></label>
@@ -35,6 +42,12 @@
 					></textarea>
 				</fieldset>
 
+				<!-- 
+					//* --------------- *//
+					//* --- BOTONES --- *//
+					//* --------------- *//
+				 -->
+
 				<fieldset class="botones-principales">
 					<span class="consejo">Solo letras minúsculas y sin acentos</span>
 					<button class="boton-encriptar" type="button">
@@ -46,7 +59,11 @@
 				</fieldset>
 			</form>
 
-			<!-- * PANEL DEL COSTADO DERECHO - Mensaje ya des/encriptado * -->
+			<!-- 
+				//* ------------------------------------------------------------- *//
+				//* --- PANEL DEL COSTADO DERECHO - Mensaje ya des/encriptado --- *//
+				//* ------------------------------------------------------------- *//
+			-->
 			<aside class="texto-modificado-container">
 				<!-- 
                     Cosas que aparecen antes de desencriptar / encriptar
@@ -68,14 +85,14 @@
                  -->
 				<div class="hidden texto-final-container">
 					<p class="texto-final"></p>
-
 					<button class="boton-copiar"><p>Copiar</p></button>
-				</div>
+				<div/>
 			</aside>
 		</main>
 
 		<!-- * FOOTER * -->
 
 		<script src="JS/script.js"></script>
+		<script src="JS/botones.js"></script>
 	</body>
 </html>

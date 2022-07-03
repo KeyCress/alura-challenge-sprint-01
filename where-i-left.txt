@@ -1,3 +1,1 @@
-Cambiar todas las etiquetas a unas mas legibles por dios.
-
-Separar el CSS
+Creo uqe ya funciona? solo tengo uqe hacer los demas reemplazos

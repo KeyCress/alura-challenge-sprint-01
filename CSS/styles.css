@@ -175,6 +175,11 @@ header img {
 	flex-grow: 0;
 }
 
+.texto-final-container {
+	margin: auto;
+}
+
+
 .texto-final {
 	word-break: break-word;
 
