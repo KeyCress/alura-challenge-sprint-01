@@ -8,8 +8,8 @@
 
 		<link rel="stylesheet" href="CSS/reset.css" />
 		<link rel="stylesheet" href="CSS/styles.css" />
-		<link rel="stylesheet" href="CSS/buttons.css">
-		<link rel="stylesheet" href="CSS/media-queries.css">
+		<link rel="stylesheet" href="CSS/buttons.css" />
+		<link rel="stylesheet" href="CSS/media-queries.css" />
 
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -20,17 +20,17 @@
 	</head>
 
 	<body>
-		<header><img src="Imagenes/logo.svg" alt="Loog de Alura Latam" /></header>
-
-		<main>
-			<!-- * AREA DE TEXTO - MENSAJE A DESENCRIPTAR / ENCRIPTAR * -->
-
+		<main class="grid-container">
+			<header class="header-container">
+				<img src="Imagenes/logo.svg" alt="Loog de Alura Latam" />
+			</header>
 			<!-- 
-					//* ---------------------------------------------------------- *//
-					//* --- AREA DE TEXTO - MENSAJE A DESENCRIPTAR / ENCRIPTAR --- *//
-					//* ---------------------------------------------------------- *//
-				 -->
-			<form>
+						//* ---------------------------------------------------------- *//
+						//* --- AREA DE TEXTO - MENSAJE A DESENCRIPTAR / ENCRIPTAR --- *//
+						//* ---------------------------------------------------------- *//
+					 -->
+
+			<form class="textarea-botones">
 				<fieldset class="texto-a-modificar-container">
 					<label for="mensaje"></label>
 					<textarea
@@ -43,19 +43,24 @@
 				</fieldset>
 
 				<!-- 
-					//* --------------- *//
-					//* --- BOTONES --- *//
-					//* --------------- *//
-				 -->
+						//* --------------- *//
+						//* --- BOTONES --- *//
+						//* --------------- *//
+					 -->
 
-				<fieldset class="botones-principales">
-					<span class="consejo">Solo letras minúsculas y sin acentos</span>
-					<button class="boton-encriptar" type="button">
-						<p>Encriptar</p>
-					</button>
-					<button class="boton-desencriptar" type="button">
-						<p>Desencriptar</p>
-					</button>
+				<fieldset class="botones-principales-container">
+					<div class="botones-principales-container__items">
+						<span class="consejo">Solo letras minúsculas y sin acentos</span>
+						<button class="boton-encriptar" type="button">
+							<p>Encriptar</p>
+						</button>
+					</div>
+
+					<div class="botones-principales-container__items">
+						<button class="boton-desencriptar" type="button">
+							<p>Desencriptar</p>
+						</button>
+					</div>
 				</fieldset>
 			</form>
 
@@ -64,13 +69,14 @@
 				//* --- PANEL DEL COSTADO DERECHO - Mensaje ya des/encriptado --- *//
 				//* ------------------------------------------------------------- *//
 			-->
-			<aside class="texto-modificado-container">
+
+			<aside class="texto-modificado-container aside-container">
 				<!-- 
-                    Cosas que aparecen antes de desencriptar / encriptar
-                 -->
+						Cosas que aparecen antes de desencriptar / encriptar
+					 -->
 				<div class="texto-no-ingresado">
 					<img
-						class="hidden"
+						class="hidden imagen-muñeco"
 						src="Imagenes/Muñeco.svg"
 						alt="Persona tratando de buscar algo con una lupa"
 					/>
@@ -81,16 +87,19 @@
 				</div>
 
 				<!-- 
-                    Mensaje ya desencriptado / encriptado
-                 -->
+						Mensaje ya desencriptado / encriptado
+					 -->
 				<div class="hidden texto-final-container">
 					<p class="texto-final"></p>
-					<button class="boton-copiar"><p>Copiar</p></button>
-				<div/>
+					<button class="boton-copiar">
+						<p>Copiar</p>
+					</button>
+				</div>
 			</aside>
 		</main>
 
 		<!-- * FOOTER * -->
+		<footer class="footer-container"></footer>
 
 		<script src="JS/script.js"></script>
 		<script src="JS/botones.js"></script>

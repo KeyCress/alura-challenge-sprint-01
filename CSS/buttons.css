@@ -1,3 +1,30 @@
+.botones-principales-container {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: flex-start;
+	align-items: center;
+	align-content: stretch;
+}
+
+.botones-principales-container__items:nth-child(1) {
+	display: block;
+	flex-grow: 0;
+	flex-shrink: 1;
+	flex-basis: auto;
+	align-self: auto;
+	order: 0;
+}
+
+.botones-principales-container__items:nth-child(2) {
+	display: block;
+	flex-grow: 0;
+	flex-shrink: 1;
+	flex-basis: auto;
+	align-self: auto;
+	order: 0;
+}
+
 .boton-encriptar {
 	/* Auto layout */
 
@@ -57,12 +84,12 @@
 	align-items: flex-start;
 	padding: 24px;
 	gap: 8px;
-	margin-left: auto;
-	margin-right: auto;
-	margin-bottom: 4rem;
+	/* margin-left: auto;
+	margin-right: auto; */
+	margin-bottom: 3rem;
 
-	width: 343px;
-	height: 67px;
+	width: 21.4rem;
+	height: 4.2rem;
 
 	/* Dark blue/dark-blue-300 */
 
@@ -101,7 +128,9 @@
 	flex-grow: 1;
 }
 
-
+/* ---------------------*/
+/* --- BOTON COPIAR --- */
+/* ---------------------*/
 
 .boton-copiar {
 	/* Button */

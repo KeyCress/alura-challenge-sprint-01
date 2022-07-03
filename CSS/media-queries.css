@@ -1,0 +1,94 @@
+@media (min-width: 60em) {
+	.botones-principales-container {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: nowrap;
+		justify-content: space-around;
+		align-items: center;
+		align-content: stretch;
+
+		margin-bottom: 3rem;
+	}
+
+	.botones-principales-container__items:nth-child(1) {
+		display: block;
+		flex-grow: 0;
+		flex-shrink: 1;
+		flex-basis: auto;
+		align-self: auto;
+		order: 0;
+	}
+
+	.botones-principales-container__items:nth-child(2) {
+		display: block;
+		flex-grow: 0;
+		flex-shrink: 1;
+		flex-basis: auto;
+		align-self: auto;
+		order: 0;
+		margin-top: auto;
+	}
+
+	.boton-desencriptar {
+		margin-top: 1rem;
+		margin-bottom: 1.5rem;
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
+
+@media (min-width: 75em) {
+	.grid-container {
+		display: grid;
+		grid-template-columns: 0.3fr 1.7fr 1fr;
+		grid-template-rows: 0.3fr 2.6fr 0.8fr 0.3fr;
+		gap: 0px 0px;
+		grid-auto-flow: row;
+		grid-template-areas:
+			"header header aside"
+			". textarea-botones aside"
+			". textarea-botones aside"
+			". footer aside";
+		height: 100vh;
+	}
+
+	.aside-container {
+		grid-area: aside;
+		margin-top: 3rem;
+	}
+
+	.footer-container {
+		grid-area: footer;
+	}
+
+	.header-container {
+		grid-area: header;
+	}
+
+	.textarea-botones {
+		grid-area: textarea-botones;
+	}
+
+	.texto-a-modificar-container textarea {
+		height: auto;
+		width: auto;
+	}
+
+	.botones-principales-container {
+		margin-top: 6rem;
+	}
+
+	.imagen-muñeco {
+		display: block;
+		margin-bottom: 3rem;
+	}
+
+	.texto-no-ingresado-aviso {
+		margin: auto;
+	}
+
+	.texto-no-ingresado-consejo {
+		margin: auto;
+		margin-top: 1rem;
+	}
+}

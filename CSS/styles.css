@@ -69,9 +69,8 @@ header img {
 .consejo {
 	/* Solo letras minúsculas y sin acentos */
 
-	width: 205px;
-	height: 18px;
 	margin-left: 1rem;
+	margin-right: 7rem;
 
 	font-family: "Inter";
 	font-style: normal;
